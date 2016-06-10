@@ -1,0 +1,73 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+nav.navbar {
+    border: none !important;
+    background: #a94442 !important;
+    color: #fff !important;
+}
+.navbar-brand-faux {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+@media (min-width: 768px) {
+    .navbar-brand-faux {
+        margin-left: -15px;
+    }
+}
+.jumbotron {
+    padding: 88px 0;
+}
+h1.text-danger {
+    color: #a94442 !important;
+    margin-bottom: 24px;
+}
+#learn-more-about-phishing {
+    margin-top: 50px !important;
+}
+@media (max-width: 768px) {
+    #learn-more-about-phishing {
+        margin-top: 30px !important;
+        display: block;
+    }
+}
+footer.page-footer .container{
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding: 18px 0;
+}
+footer.page-footer p {
+    color: #777;
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 990px) {
+    .jumbotron {
+        padding: 38px 0;
+    }
+    .next-steps .col-md-4 {
+        margin-bottom: 38px;
+    }
+    footer.page-footer .container{
+        margin-top: 0;
+    }
+}
+footer.page-footer p{
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+

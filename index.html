@@ -1,0 +1,174 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>PHISHING ALERT</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+            }
+            h1.text-danger {
+                color: #a94442;
+            }
+            nav.navbar {
+                background: #a94442 !important;
+                color: #fff !important;
+            }
+        </style>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <script>
+//          This is your google analytics account number
+            var siteGoogleAnalyticsID = "UA-########-#";
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', siteGoogleAnalyticsID, 'auto');
+            ga('send', 'pageview');
+        </script>
+        <nav class="navbar navbar-inverse navbar-fixed-top danger">
+            <div class="container">
+                <span class="navbar-brand-faux">Phishing Alert</span>
+            </div>
+        </nav>
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="text-danger">Someone just tried to scam you!</h1>
+                <p>                
+                    The link you just clicked is part of a scam to get your personal information.
+                </p><p>
+                    This website was hacked. The hackers created deceptive pages designed to look like real sites that you may use (such as Dropbox, Google, or Adobe).
+                </p><p><strong>
+                        The goal was for you to enter your login credentials, giving the hackers access to your account on those sites. This is a scam commonly called "phishing".
+                    </strong></p><p>
+                    The fake pages have been removed and replaced with this warning message.
+                </p>            <p>
+                    <a id="learn-more-about-phishing" 
+                       class="btn btn-danger btn-lg outbound-link" 
+                       href="http://www.techrepublic.com/blog/10-things/10-tips-for-spotting-a-phishing-email" 
+                       role="button"
+                       data-site="10 tips to spot phishing">
+                        Learn how to avoid phishing
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row next-steps">
+                <div class="col-md-4">
+                    <h2>What Is Phishing?</h2>
+                    <p>
+                        Phishing is the attempt to acquire sensitive information such as usernames, 
+                        passwords, and credit card details (and sometimes, indirectly, money), often 
+                        for malicious reasons, by masquerading as a trustworthy entity in an 
+                        electronic communication.
+                    </p>
+                    <p>
+                        This case was what is known as a 
+                        "<a href="https://en.wikipedia.org/wiki/Phishing#Website_forgery" 
+                            class="outbound-link text-danger"
+                            data-site="wikipedia forgery">Website Forgery</a>" 
+                        where the attackers used common logos and colors to pretend like they were a legitimate site.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h2>What Should I Do Now?</h2>
+                    <p>
+                        If you didn't fill out one of the scammer's forms, you should be OK. 
+                    </p>
+                    <p>
+                        However, it's always a good idea to change your passwords regularly.
+                        You should also set up 
+                        <a href="http://www.cnet.com/news/two-factor-authentication-what-you-need-to-know-faq/"
+                           class="outbound-link text-danger"
+                           data-site="two factor authentication">
+                            two factor authentication</a> if possible. This helps you keep safe
+                        even if the actual text of your password is compromised. 
+                    </p>
+                    <p>
+                        Running regular system scans and an anti-virus software is also a 
+                        good idea.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Why didn't you just remove the page?</h2>
+                    <p>
+                        Scams like this are caught and removed all over the net. 
+                        But there's nothing for the victim to learn from just 
+                        clicking a malicious link and getting a "not found" 
+                        or "forbidden" message.
+                    </p>
+                    <p>
+                        In fact, taking it down might be worse if the victim replies
+                        to the email to ask why the link doesn't work, 
+                        then starts interacting with the hackers directly. 
+                    </p>
+                    <p>
+                        Hopefully this warning prevents future scams, 
+                        and not just this one. 
+                    </p>
+                </div>
+            </div>
+        </div> <!-- /container -->
+        <footer class="page-footer">
+            <div class="container">
+                <div class="col-md-12">
+                    <p class='small'>
+                        This page assumes no responsibility for any damages related the 
+                        original phishing scam.
+                        <br />
+                        Left as a courtesy by 
+                        <a href='https://github.com/herent/phishing_alert'
+                           class="outbound-link text-danger"
+                           data-site="herent github account">herent</a>
+                    </p>    
+                </div>
+            </div>
+
+        </footer>        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+
+        <script>
+            var trackOutboundLink = function ($link) {
+                var site = $link.data("site");
+                var url = $link.attr("href");
+                ga('send', 'event', 'phishing', 'click', site, {
+                    'transport': 'beacon',
+                    'hitCallback': function () {
+                        document.location = url;
+                    }
+                });
+            }
+
+            $(document).ready(function () {
+                $(".outbound-link").click(function (e) {
+                    e.preventDefault();
+                    trackOutboundLink($(this));
+                });
+            });
+
+        </script>
+    </body>
+</html>
